@@ -118,6 +118,9 @@ spec:
                 - "fortioclient"
 {{- end }}
             topologyKey: "kubernetes.io/hostname"
+{{- if .Values.affinity }}
+{{ toYaml .Values.affinity | indent 8 }}
+{{- end }}
       volumes:
       - name: shared-data
         emptyDir: {}

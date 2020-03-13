@@ -41,6 +41,16 @@ client: # client overrides
   injectL: "disabled" # "enabled" or "disabled"
   replica: 1    # default value
 
+affinity:
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: visenze.component
+              operator: In
+              values:
+                - app
+
 cert: false
 interceptionMode: REDIRECT
 

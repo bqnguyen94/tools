@@ -222,6 +222,30 @@
 
    {% if user_benchmark_type == "Latency vs. Connection" or user_benchmark_type == "Latency vs. QPS" %}
     <script>
+    latency_mixer_clientonly_p50 = {{ latency_mixer_clientonly_p50|safe }}
+    latency_none_clientonly_p50 = {{ latency_none_clientonly_p50|safe }}
+    latency_v2_clientonly_p50 = {{ latency_v2_clientonly_p50|safe }}
+    
+    latency_mixer_clientonly_p90 = {{ latency_mixer_clientonly_p90|safe }}
+    latency_none_clientonly_p90 = {{ latency_none_clientonly_p90|safe }}
+    latency_v2_clientonly_p90 = {{ latency_v2_clientonly_p90|safe }}
+    
+    latency_mixer_clientonly_p99 = {{ latency_mixer_clientonly_p99|safe }}
+    latency_none_clientonly_p99 = {{ latency_none_clientonly_p99|safe }}
+    latency_v2_clientonly_p99 = {{ latency_v2_clientonly_p99|safe }}
+    
+    latency_mixer_clientonly_p50_master = {{ latency_mixer_clientonly_p50_master|safe }}
+    latency_none_clientonly_p50_master = {{ latency_none_clientonly_p50_master|safe }}
+    latency_v2_clientonly_p50_master = {{ latency_v2_clientonly_p50_master|safe }}
+    
+    latency_mixer_clientonly_p90_master = {{ latency_mixer_clientonly_p90_master|safe }}
+    latency_none_clientonly_p90_master = {{ latency_none_clientonly_p90_master|safe }}
+    latency_v2_clientonly_p90_master = {{ latency_v2_clientonly_p90_master|safe }}
+    
+    latency_mixer_clientonly_p99_master = {{ latency_mixer_clientonly_p99_master|safe }}
+    latency_none_clientonly_p99_master = {{ latency_none_clientonly_p99_master|safe }}
+    latency_v2_clientonly_p99_master = {{ latency_v2_clientonly_p99_master|safe }}
+        
     latency_mixer_base_p50 = {{ latency_mixer_base_p50|safe }}
     latency_mixer_serveronly_p50 = {{ latency_mixer_serveronly_p50|safe }}
     latency_mixer_both_p50 = {{ latency_mixer_both_p50|safe }}

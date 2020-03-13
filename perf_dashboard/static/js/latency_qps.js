@@ -1,7 +1,8 @@
 /* Latency Charts */
 
 // labels along the x-axis
-var connNum = ["10", "100", "500", "1000", "2000", "3000"];
+// 10, 100, 500, 1000, 2000, 3000, 4000
+var connNum = ["10", "100", "500", "1000", "2000", "3000", "4000"];
 // x-axis and y-axis labels
 var options = {
     scales: {
@@ -17,7 +18,8 @@ var options = {
                 labelString: "QPS"
             }
         }]
-    }
+    },
+    spanGaps: true,
 };
 
 window.onload = function () {

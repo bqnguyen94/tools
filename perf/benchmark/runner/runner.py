@@ -192,7 +192,7 @@ class Fortio:
         fortio_cmd = (
             "fortio load {headers_cmd} -c {conn} -qps {qps} -t {duration}s -a -r {r} {cacert_arg} {grpc} -httpbufferkb=128 " +
             "-labels {labels}").format(
-                headers=headers,
+                headers_cmd=headers_cmd,
                 conn=conn,
                 qps=qps,
                 duration=duration,

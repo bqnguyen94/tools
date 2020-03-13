@@ -44,5 +44,6 @@ def graph_plotting(request):
             context = reduce(lambda x, y: dict(x, **y), (d1, d4))
         else:
             context = d1
+        print(context)
         return render(request, 'graph_plotting.html', context=context)
     return render(request, 'graph_plotting.html')
